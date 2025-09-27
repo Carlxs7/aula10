@@ -8,6 +8,40 @@
     
     <title>Testando</title>
 
+    <style>
+      @import 'tailwindcss/base';
+      @import 'tailwindcss/components';
+      @import 'tailwindcss/utilities';
+
+      .dropdown-menu {
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+        pointer-events: none;
+      }
+
+      .dropdown:hover .dropwdown-menu {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+      .meu-link {
+        transition: all 0.3s ease;
+      }
+
+      .dropdown:hover .arrow {
+        transform: rotate(180deg);
+      }
+
+      .arrow {
+        transition: transfom 0.3s ease;
+      }
+    </style>
+
+
 </head>
 <body>
     <h1 class="text-3xl font-bold underline text-clifford">
