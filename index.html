@@ -8,7 +8,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-
   <title>Testando</title>
 
   <style>
@@ -24,7 +23,7 @@
       pointer-events: none;
     }
 
-    .dropdown:hover .dropwdown-menu {
+    .dropdown:hover .dropdown-menu {
       transform: translateY(0);
       opacity: 1;
       visibility: visible;
@@ -40,11 +39,9 @@
     }
 
     .arrow {
-      transition: transfom 0.3s ease;
+      transition: transform 0.3s ease;
     }
   </style>
-
-
 </head>
 
 <body class="bg-gray-50 min-h-screen">
@@ -53,27 +50,30 @@
     <div class="max-w-7xl mx-auto px-8">
       <div class="flex justify-between items-center h-16">
         <div class="flex-shrink-0">
-          <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent
-          
-          hover:from-purple-600 hover:to-blue-600
-          transition-all duration-300 cursor-pointer">
+          <h1
+            class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-blue-600 transition-all duration-300 cursor-pointer">
             DevCarlxs
           </h1>
         </div>
 
         <nav class="flex space-x-8">
-          <a href="#" class="menu-link text-gray-700 hover:text-blue-600 px-4 py-2 rounded-end text-sm font-medium hover:bg-blue-50 transition-colors duration-200">
+          <a href="#"
+            class="menu-link text-gray-700 hover:text-blue-600 px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-50 transition-colors duration-200">
             Home
           </a>
-
-          <div class="dropdown-relative">
-            <button class="menu-link text-gray-700 hover:text-blue-600 px-4 py-2 rounded-end text-sm font-medium hover:bg-blue-50 transition-colors duration-200">
+          
+          <div class="dropdown relative">
+            <button
+              class="menu-link flex items-center text-gray-700 hover:text-blue-600 px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-50 transition-colors duration-200">
+              Serviços
+              <i class="ph ph-caret-down ml-2 arrow"></i>
             </button>
 
-            Serviços
-
-          </div>
-
+            
+            <div class="dropdown-menu absolute left-0 mt-1 w-44 bg-white rounded-lg shadow-lg pb-2">
+              <a href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Web Design</a>
+            </div>
           </div>
         </nav>
       </div>
@@ -81,5 +81,4 @@
   </header>
 
 </body>
-
 </html>
