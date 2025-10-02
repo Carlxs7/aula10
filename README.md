@@ -1,2 +1,3 @@
 # 🖥️ Site em andamento... 
 # Em Breve novas atualizações ! 🕖
+![anime](https://github.com/user-attachments/assets/ffffefb7-d3c8-4055-a7e0-adc5a30bb11b)
